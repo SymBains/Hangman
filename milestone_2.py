@@ -23,3 +23,19 @@ if len(user_guess) == 1 and user_guess.isalpha():
 else:
     print("Oops! That is not a valid input.")
 
+#Refactoring to separate fuctions 
+def get_favorite_fruits():
+    """Return a list of favorite fruits."""
+    return ['orange', 'apple', 'banana', 'kiwi', 'melon']
+
+def select_random_fruit(fruit_list):
+    """Select a random fruit from the provided list."""
+    return random.choice(fruit_list)
+
+def get_user_guess():
+    """Ask the user to enter a single letter."""
+    return input("Enter a single letter: ")  
+
+def is_valid_guess(guess):
+    """Check if the input is a valid single letter."""
+    return len(guess) == 1 and guess.isalpha()
