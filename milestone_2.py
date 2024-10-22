@@ -3,22 +3,22 @@
 import random
 
 #Create a list containing the names of your 5 favorite fruits.
-fruits = ['orange', 'apple', 'banana', 'kiwi', 'melon']
+favourite_fruits = ['orange', 'apple', 'banana', 'kiwi', 'melon']
 
 #Assign this list to a variable called word_list
-word_list = fruits
-print(word_list)
+fruit_list = favourite_fruits
+print(fruit_list)
 
 #Create random choice which assigns the randomly generated word to a new variable
-word = random.choice(word_list)
+selected_fruit = random.choice(fruit_list)
 
-print(word)
+print(selected_fruit)
 
 #Ask the user to enter a single letter
-guess = input("Enter a single letter")
+user_guess = input("Enter a single letter: ")
 
 #Checks that the input is a single letter
-if len(guess) == 1 and guess.isalpha():
+if len(user_guess) == 1 and user_guess.isalpha():
     print("Good guess!")  
 else:
     print("Oops! That is not a valid input.")
